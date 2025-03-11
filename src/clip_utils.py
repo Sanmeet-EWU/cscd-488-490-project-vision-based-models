@@ -30,10 +30,6 @@ class CLIPFineTuner(nn.Module):
 
 
 @st.cache_resource
-
-
-
-
 def load_custom_clip_model(model_path="src/clip_finetuned.pth", classifier_path="src/classifier_weights.pth", num_classes=13):
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -96,7 +92,6 @@ def load_custom_clip_model(model_path="src/clip_finetuned.pth", classifier_path=
 
 
 
-
 def get_text_features(captions, device, model):
     text_tokens = clip.tokenize(captions).to(device)
     with torch.no_grad():
@@ -128,7 +123,7 @@ def classify_image(image_features, model):
     model.eval()
 
     with torch.no_grad():
-        logits = model.classifier(image_features) * 6 
+        logits = model.classifier(image_features) * 1 
 
         # 🔥 Apply temperature scaling (Lower temp = stronger predictions)
         temperature = 0.7  # Test values between 0.8 to 1.5

@@ -17,17 +17,38 @@ index = load_index_from_storage(storage_context)
 def process_user_input(user_prompt, language):
     user_message = {"role": "user", "content": user_prompt}
     st.session_state["current_chat_history"].append(user_message)
-    
+
     display_current_chat()
 
+    # ✅ Only Run RAG for Crop-Related Queries
+    crop_keywords = ["crop", "agriculture", "farming", "planting", "harvest", "soil", "disease", "fertilizer",
+                     "pests", "photosynthesis", "irrigation", "wheat", "corn", "rice", "potato", "sugarcane"]
+
+    if not any(keyword in user_prompt.lower() for keyword in crop_keywords):
+        assistant_response = "⚠️ I only provide information on crops, agriculture, and plant health. Please ask a farming-related question."
+        assistant_message = {"role": "assistant", "content": assistant_response}
+        st.session_state["current_chat_history"].append(assistant_message)
+        st.chat_message("assistant").markdown(assistant_response)
+        return user_message, assistant_message
+
+    # ✅ If Query is Crop-Related, Proceed with RAG
     query_engine = index.as_query_engine()
-    retrieved_docs = query_engine.query(user_prompt)  
+    retrieved_docs = query_engine.query(user_prompt)
     context_text = "\n".join([doc.get_text() for doc in retrieved_docs]) if hasattr(retrieved_docs, 'get_text') else str(retrieved_docs)
 
+    # 🚨 If No Relevant Context, Return a Custom Message
+    if not context_text.strip() or "No relevant crop-related information" in context_text:
+        assistant_response = "⚠️ I couldn't find relevant crop-related information in my database."
+        assistant_message = {"role": "assistant", "content": assistant_response}
+        st.session_state["current_chat_history"].append(assistant_message)
+        st.chat_message("assistant").markdown(assistant_response)
+        return user_message, assistant_message
+
+    # ✅ Ensure LLAMA Uses RAG Before General LLM Knowledge
     messages = [
-        {"role": "system", "content": f"You are a helpful assistant. Use retrieved knowledge to answer the user's question in {language}."},
-        {"role": "system", "content": f"Relevant Context:\n{context_text}"},
-        *st.session_state["current_chat_history"],
+        {"role": "system", "content": f"You are an expert assistant. Use **only** the retrieved knowledge to answer."},
+        {"role": "system", "content": f"**Relevant Knowledge Retrieved:**\n{context_text}"},
+        {"role": "user", "content": user_prompt},
     ]
 
     response = client.chat.completions.create(
@@ -38,7 +59,7 @@ def process_user_input(user_prompt, language):
     assistant_response = response.choices[0].message.content
     assistant_message = {"role": "assistant", "content": assistant_response}
     st.session_state["current_chat_history"].append(assistant_message)
-    st.chat_message("assistant").markdown(assistant_response)
+    st.chat_message("assistant").markdown(f"**Response:**\n\n{assistant_response}")
 
     return user_message, assistant_message
 
