@@ -1,0 +1,80 @@
+Corn Disease and Health Database
+
+Healthy Corn:
+Healthy corn plants exhibit vibrant green leaves, strong stalks, and well-developed ears. The leaves should be free of lesions, spots, or discoloration. Proper growth depends on adequate sunlight, water, and nutrient availability.
+
+Indicators of Health
+Dark green, turgid leaves
+No spots, lesions, or wilting
+Uniform plant height and growth
+Strong root system and stalks
+
+Best Practices for Maintaining Health
+Crop rotation to prevent soil depletion
+Proper fertilization based on soil testing
+Regular irrigation and drainage management
+Weed control to reduce competition
+Monitoring for pests and diseases
+
+Diseases:
+Common Rust (Puccinia sorghi)
+Common rust is a fungal disease affecting corn, particularly in warm, humid conditions. It spreads via airborne spores and can significantly reduce yield if severe.
+
+Symptoms
+Small, reddish-brown pustules on both upper and lower leaf surfaces
+Pustules are elongated and may join together in severe infections
+Leaves may yellow and die prematurely
+Reduced photosynthesis and plant vigor
+
+Prevention
+Planting resistant hybrids
+Avoiding excessive nitrogen fertilization
+Rotating crops to break the fungal cycle
+Reducing overhead irrigation
+
+Treatment
+Fungicide application if disease pressure is high
+Removing infected plant debris post-harvest
+Improving air circulation to reduce humidity
+
+Gray Leaf Spot (Cercospora zeae-maydis)
+Description
+Gray Leaf Spot is a serious fungal disease that thrives in warm, humid conditions. It can cause significant yield loss by reducing the plant's photosynthetic ability.
+
+Symptoms
+Tan or gray rectangular lesions on lower leaves, expanding upward
+Lesions have distinct parallel margins
+Infected leaves may die prematurely
+Reduced kernel fill due to impaired photosynthesis
+
+Prevention
+Planting resistant hybrids
+Practicing crop rotation to reduce inoculum levels
+Removing plant debris after harvest
+Avoiding excessive nitrogen applications
+
+Treatment
+Application of foliar fungicides at early onset
+Ensuring adequate plant spacing for airflow
+Using no-till practices cautiously to avoid residue buildup
+
+Northern Leaf Blight (Exserohilum turcicum)
+Description
+Northern Leaf Blight (NLB) is a fungal disease that affects corn in cool, wet conditions. It can cause major yield reductions if not managed properly.
+
+Symptoms
+Large, cigar-shaped tan lesions on leaves
+Lesions start small but expand lengthwise
+Severe infections may cause premature leaf death
+Reduced grain fill and overall plant vigor
+
+Prevention
+Selecting resistant hybrids
+Rotating crops to reduce pathogen presence
+Practicing good field sanitation to remove infected debris
+Avoiding dense planting to improve airflow
+
+Treatment
+Applying fungicides when conditions favor disease development
+Ensuring proper nutrient management to maintain plant strength
+Scout fields early and often for early detection

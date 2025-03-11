@@ -1,0 +1,62 @@
+Sugarcane Disease and Health Database
+
+Healthy Sugarcane
+Description
+Healthy sugarcane plants exhibit strong, upright stalks with lush green leaves and a high sugar content. Proper field management, pest control, and irrigation are key to maintaining plant health and maximizing yield.
+
+Indicators of Health:
+Green, unblemished leaves
+Firm, straight stalks with no discoloration or lesions
+High sugar accumulation in mature stalks
+Absence of wilting, leaf yellowing, or fungal growth
+
+Best Practices for Maintaining Health:
+Proper field drainage to prevent waterlogging
+Balanced fertilization, especially nitrogen and potassium
+Regular pest and disease monitoring
+Proper spacing to improve air circulation
+Crop rotation to prevent soil-borne infections
+
+Bacterial Blight (Xanthomonas albilineans)
+Description
+Bacterial blight is a serious disease affecting sugarcane, causing leaf scalding and yield losses. It spreads through infected planting material and water splashes.
+
+Symptoms:
+White, narrow, streak-like lesions on leaves
+Progressive leaf drying and wilting
+Stunted plant growth and reduced tillering
+Sudden leaf scalding and plant death in severe cases
+
+Prevention:
+Using disease-free planting material
+Avoiding excessive nitrogen fertilizer
+Ensuring proper drainage to reduce water stagnation
+Regular field inspections and rogueing infected plants
+
+Treatment:
+No effective chemical control; prevention is key
+Destroying infected plants to prevent further spread
+Using resistant sugarcane varieties
+Sterilizing tools and equipment between uses
+
+Red Rot (Colletotrichum falcatum)
+Description
+Red Rot is a fungal disease that severely impacts sugarcane yield and quality by rotting the internal tissues of the stalk.
+
+Symptoms:
+Red streaks inside the stalk with a foul odor
+Yellowing and drying of leaves from the top downward
+Hollowing of stalks and internal tissue decay
+Poor sugar accumulation and weak canes
+
+Prevention:
+Planting resistant sugarcane varieties
+Using healthy seed material for propagation
+Removing and burning infected crop residues
+Proper irrigation management to prevent excessive moisture
+
+Treatment:
+Fungicide application on seed cane before planting
+Crop rotation with non-host plants
+Ensuring proper field hygiene and sanitation
+Avoiding mechanical injuries that allow fungal entry

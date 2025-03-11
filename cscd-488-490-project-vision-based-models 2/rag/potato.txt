@@ -1,0 +1,63 @@
+Potato Disease and Health Database
+
+Healthy Potatoes
+Description
+Healthy potato plants exhibit lush green foliage, strong stems, and well-formed tubers free from blemishes or decay. Proper growth depends on balanced soil nutrients, adequate moisture, and disease prevention practices.
+
+Indicators of Health
+Vibrant green leaves with no spots or curling
+Strong, upright stems
+Well-developed tubers with smooth, unblemished skin
+No signs of rot, discoloration, or stunted growth
+
+Best Practices for Maintaining Health
+Crop rotation to reduce disease buildup
+Proper soil preparation and fertilization
+Adequate watering without over-saturation
+Timely removal of weeds and infected plants
+Monitoring for early signs of disease or pest infestation
+
+Early Blight (Alternaria solani)
+Description
+Early Blight is a fungal disease that primarily affects potato foliage, leading to premature defoliation and reduced yield. It thrives in warm, humid conditions and spreads via spores in soil and plant debris.
+
+Symptoms
+Small, dark brown spots with concentric rings on lower leaves
+Yellowing of leaves, progressing upwards
+Weakened plant vigor and premature leaf drop
+Reduced tuber growth due to early loss of foliage
+
+Prevention
+Planting resistant potato varieties
+Practicing crop rotation to minimize fungal spores in soil
+Providing proper spacing for airflow to reduce humidity
+Avoiding overhead irrigation to keep leaves dry
+
+Treatment
+Application of fungicides at first sign of infection
+Removing and destroying infected plant material
+Maintaining balanced soil nutrition for strong plant defense
+Ensuring proper irrigation management to prevent moisture buildup
+
+Late Blight (Phytophthora infestans)
+Description
+Late Blight is a devastating fungal-like disease responsible for the Irish Potato Famine. It spreads rapidly under cool, wet conditions and can cause total crop loss if untreated.
+
+Symptoms
+Dark, water-soaked lesions on leaves and stems
+White, fuzzy mold growth on underside of leaves in humid conditions
+Rapid leaf and stem collapse
+Brown, sunken spots on tubers leading to rot
+
+Prevention
+Planting resistant potato cultivars
+Using certified disease-free seed potatoes
+Avoiding dense planting to improve airflow
+Removing infected plant material immediately
+Applying preventative fungicides in high-risk conditions
+
+Treatment
+Immediate application of systemic fungicides
+Removing and destroying all infected plants
+Harvesting tubers promptly in dry conditions to avoid contamination
+Storing potatoes in cool, dry environments to prevent spread post-harvest

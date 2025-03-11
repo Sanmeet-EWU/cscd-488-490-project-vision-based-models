@@ -1,0 +1,59 @@
+Wheat Disease and Health Database
+
+Healthy Wheat
+Description:
+Healthy wheat is characterized by vibrant green leaves, strong stems, and a good overall appearance. The plants are free from pests and diseases, showing no signs of discoloration or damage.
+
+Indicators of Health:
+Green and healthy foliage
+Strong and upright stems
+No visible pests or diseases
+
+Best Practices for Maintaining Health:
+Regular monitoring for pests
+Proper irrigation and balanced fertilization
+Crop rotation to prevent soil-borne diseases
+Ensuring well-drained soil and adequate sunlight exposure
+
+Brown Rusted Wheat (Puccinia triticina)
+Description:
+Brown rust on wheat is caused by the Puccinia triticina fungus. The disease leads to reddish-brown pustules on the wheat leaves, causing a reduction in photosynthesis and yield loss.
+
+Symptoms:
+Reddish-brown pustules on the upper side of the leaves
+Yellowing of leaves around the infected areas
+Premature leaf senescence
+Reduced yield and overall plant health
+
+Prevention:
+Use of resistant wheat varieties
+Application of fungicides to control rust spread
+Crop rotation to reduce pathogen buildup
+Removal of infected plant residues
+Planting in well-drained fields
+
+Treatment:
+Fungicide application during the early stages of infection
+Removal and destruction of infected plant materials
+Regular monitoring to identify and control the disease early
+Yellow Rusted Wheat (Puccinia striiformis)
+Description:
+Yellow rust, caused by Puccinia striiformis, results in yellow streaks on leaves, leading to a significant loss in yield if not controlled.
+
+Symptoms:
+Yellow stripes on leaves, often with a slight orange hue
+Lesions with yellow pustules on the underside of the leaves
+Leaf tip yellowing and dieback
+Reduced plant vigor and yield loss
+
+Prevention:
+Use of resistant wheat varieties
+Regular monitoring and early identification
+Fungicide application during key growth stages
+Crop rotation and destruction of infected crops
+Avoiding dense planting that traps moisture
+
+Treatment:
+Fungicide application to reduce fungal spread
+Crop rotation and removal of infected plant material
+Ensuring good air circulation and plant spacing

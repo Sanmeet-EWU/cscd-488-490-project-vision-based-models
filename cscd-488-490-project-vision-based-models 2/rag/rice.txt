@@ -1,0 +1,80 @@
+Rice Disease and Health Database
+
+Healthy Rice
+Description
+Healthy rice plants exhibit strong, upright growth with lush green leaves and well-formed grains. Proper management of nutrients, water, and pests is essential for optimal yield and quality.
+
+Indicators of Health
+Bright green leaves with no spots or discoloration
+Strong, sturdy stems supporting panicles
+Well-developed grains free from deformities
+Absence of lesions, mold, or abnormal wilting
+
+Best Practices for Maintaining Health
+Proper field drainage to prevent waterlogging
+Balanced fertilization based on soil tests
+Timely pest and weed management
+Regular field inspections for early disease detection
+
+Brown Spot (Cochliobolus miyabeanus)
+Description
+Brown Spot is a fungal disease that affects rice leaves, grains, and seedlings, often leading to yield loss under nutrient-deficient conditions.
+
+Symptoms
+Small, circular to oval brown lesions with a yellow halo on leaves
+Dark brown spots on grains, affecting quality
+Weak, stunted seedlings with discoloration
+Increased susceptibility to other stresses
+
+Prevention
+Applying balanced nitrogen and potassium fertilizers
+Using disease-resistant rice varieties
+Practicing proper water management to avoid stress
+Removing infected plant debris to reduce pathogen spread
+
+Treatment
+Application of fungicides if disease pressure is high
+Strengthening plant health through nutrient management
+Adjusting planting density to improve air circulation
+
+Leaf Blast (Magnaporthe oryzae)
+Description
+Leaf Blast is a major fungal disease in rice, thriving in warm, humid conditions. It causes severe damage to leaves, reducing photosynthesis and plant vigor.
+
+Symptoms
+Diamond-shaped lesions with gray centers and brown margins on leaves
+Wilting and drying of infected leaves
+Stunted growth due to reduced energy production
+Severe infections leading to entire leaf death
+
+Prevention
+Planting resistant rice varieties
+Avoiding excessive nitrogen fertilizer
+Maintaining proper field drainage to reduce humidity
+Using wider spacing to promote airflow
+
+Treatment
+Applying protective fungicides at early symptom appearance
+Removing and destroying infected plant residues
+Practicing crop rotation to break disease cycle
+
+Neck Blast (Magnaporthe oryzae)
+Description
+Neck Blast is a severe form of rice blast disease that affects the panicle, causing poor grain development and significant yield loss.
+
+Symptoms
+Dark brown to black lesions on the neck of the panicle
+Panicle breakage or incomplete grain filling
+Grain sterility leading to lower yields
+Whiteheads (empty panicles) in severe cases
+
+Prevention
+Using resistant rice cultivars
+Avoiding excessive nitrogen application
+Ensuring proper irrigation management
+Reducing plant density for better airflow
+
+Treatment
+Fungicide application during the flowering stage
+Destroying infected plant residues post-harvest
+Implementing crop rotation to limit pathogen buildup

@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the user."
+      },
+      "created_at": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Timestamp of when the user was created."
+      },
+      "email": {
+        "type": "string",
+        "format": "email",
+        "description": "User's email address."
+      },
+      "name": {
+        "type": "string",
+        "description": "Full name of the user."
+      },
+      "chats": {
+        "type": "array",
+        "description": "List of chats associated with the user.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "chat_id": {
+              "type": "string",
+              "description": "Unique identifier for the chat session."
+            },
+            "created_at": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Timestamp of when the chat was created."
+            },
+            "last_updated": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Timestamp of when the chat was last updated."
+            },
+            "title": {
+              "type": "string",
+              "description": "Title or subject of the chat."
+            },
+            "messages": {
+              "type": "array",
+              "description": "Array of messages exchanged in the chat.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "content": {
+                    "type": "string",
+                    "description": "Text content of the message."
+                  },
+                  "role": {
+                    "type": "string",
+                    "enum": ["user", "assistant"],
+                    "description": "Role of the sender (either 'user' or 'assistant')."
+                  }
+                },
+                "required": ["content", "role"]
+              }
+            }
+          },
+          "required": ["chat_id", "created_at", "last_updated", "title", "messages"]
+        }
+      }
+    },
+    "required": ["id", "created_at", "email", "name", "chats"]
+  }
+  
