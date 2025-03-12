@@ -66,7 +66,8 @@ def process_user_input(user_prompt, language, selected_crop=None):
     query_embedding = similarity_model.encode(user_prompt, convert_to_tensor=True)
     context_embedding = similarity_model.encode(context_text, convert_to_tensor=True)
     similarity_score = util.pytorch_cos_sim(query_embedding, context_embedding).item()
-
+    
+    '''
     similarity_threshold = 0.5  # Adjust based on testing
     print(f"Similarity Score: {similarity_score}")
     # Reject queries that are outside the domain
@@ -76,6 +77,7 @@ def process_user_input(user_prompt, language, selected_crop=None):
         st.session_state["current_chat_history"].append({"role": "assistant", "content": assistant_response})
         print(f"⚠️ Low similarity score ({similarity_score}): Query rejected.")
         return user_message, {"role": "assistant", "content": assistant_response}
+    '''
     
     # Construct message history
     messages = [
