@@ -95,7 +95,7 @@ def main():
             st.session_state.uploaded_image = uploaded_file
 
             # Load CLIP model (cached)
-            model, preprocess, device = load_basic_clip_model()
+            model, preprocess, device = load_custom_clip_model()
 
             st.image(image, caption="Uploaded Image", width=400)
 
