@@ -110,7 +110,7 @@ def main():
 
             # If chat history is empty, generate response
             if not st.session_state["current_chat_history"]:
-                clip_description = generate_clip_description(best_caption, confidence, language)
+                clip_description = generate_clip_description(best_caption, language)
                 
                 if user is not None:
                     if "current_chat_id" not in st.session_state:
