@@ -70,7 +70,7 @@ def load_custom_clip_model(num_classes=13):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     try:
-        base_model, _ = clip.load("ViT-B/32", device=device)
+        base_model, preprocess = clip.load("ViT-B/32", device=device)
         model = CLIPFineTuner(base_model, num_classes).to(device)
 
         if not os.path.exists(MODEL_PATH):
