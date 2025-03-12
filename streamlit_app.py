@@ -118,7 +118,6 @@ def main():
 
     # Chat Interaction
     st.subheader("💬 Chat with LLAMA")
-    display_current_chat()
 
     user_prompt = st.chat_input("Ask LLAMA about this diagnosis...")
     if user_prompt:
