@@ -18,8 +18,6 @@ from src.firebase_config import create_user_if_not_exists, create_new_chat, fetc
 
 
 def main():
-
-
     # Ensure session state is initialized
     if "current_chat_history" not in st.session_state:
         st.session_state["current_chat_history"] = []

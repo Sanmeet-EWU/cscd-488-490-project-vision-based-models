@@ -118,7 +118,7 @@ def generate_clip_description(caption, language):
     formatted_response = {"role": "assistant", "content": assistant_response}
     
     st.session_state["current_chat_history"].append(formatted_response)
-    display_current_chat()
+    #display_current_chat()
     
     return formatted_response  # Ensure it returns the formatted response
 
