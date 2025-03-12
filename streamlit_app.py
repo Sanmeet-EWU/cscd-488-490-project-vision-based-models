@@ -1,4 +1,8 @@
 import streamlit as st
+
+st.set_page_config(page_title="CLIP Crop & Disease Detection", layout="wide")
+
+
 from PIL import Image
 import torch
 import torch.nn.functional as F
@@ -11,8 +15,10 @@ from src.llama_utils import generate_clip_description, process_user_input, displ
 from src.oauth import get_login_url, get_google_info
 from src.firebase_config import create_user_if_not_exists, create_new_chat, fetch_chat_history, load_chat, update_chat_history, add_feedback
 
+
+
 def main():
-    st.set_page_config(page_title="CLIP Crop & Disease Detection", layout="wide")
+
 
     # Ensure session state is initialized
     if "current_chat_history" not in st.session_state:
