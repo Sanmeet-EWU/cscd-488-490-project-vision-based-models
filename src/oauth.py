@@ -14,27 +14,27 @@ REDIRECT_URI = google_secrets["redirect_uri"]
 SCOPES = google_secrets["scopes"]
 
 def get_login_url():
-    """Generate Google OAuth login URL dynamically from secrets."""
-    flow = Flow.from_client_config(
-        {
-            "web": {
-                "client_id": CLIENT_ID,
-                "client_secret": CLIENT_SECRET,
-                "auth_uri": AUTH_URI,
-                "token_uri": TOKEN_URI,
-                "auth_provider_x509_cert_url": AUTH_PROVIDER_CERT_URL,
-                "redirect_uris": [REDIRECT_URI]
-            }
-        },
-        scopes=SCOPES,
-        redirect_uri=REDIRECT_URI
-    )
-    auth_url, _ = flow.authorization_url(prompt="consent")
-    return auth_url
-
+     """Generate Google OAuth login URL dynamically from secrets."""
+     flow = Flow.from_client_config(
+         {
+             "web": {
+                 "client_id": CLIENT_ID,
+                 "client_secret": CLIENT_SECRET,
+                 "auth_uri": AUTH_URI,
+                 "token_uri": TOKEN_URI,
+                 "auth_provider_x509_cert_url": AUTH_PROVIDER_CERT_URL,
+                 "redirect_uris": [REDIRECT_URI]
+             }
+         },
+         scopes=SCOPES,
+         redirect_uri=REDIRECT_URI
+     )
+     auth_url, _ = flow.authorization_url(prompt="consent")
+     return auth_url
+ 
 from google.auth.exceptions import RefreshError
 from oauthlib.oauth2 import InvalidGrantError
-
+ 
 def get_google_info(auth_code):
     """Exchange auth code for user info."""
     try:
@@ -72,7 +72,7 @@ def get_google_info(auth_code):
             "chat_history": [] # Initialize as none, will be fetched later
         }
         return user_info
-
+ 
     except InvalidGrantError:
         print("Invalid grant error: Token expired or already used.")
         return None  # Handle logout or re-authentication

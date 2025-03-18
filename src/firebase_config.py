@@ -4,6 +4,7 @@ import os
 import uuid  # For generating unique chat IDs
 from datetime import datetime, timezone
 import streamlit as st
+from src.llama_utils import display_current_chat
 # Check if Firebase is already initialized
 # Load Firebase credentials from secrets.toml
 firebase_secrets = st.secrets["firebase"]

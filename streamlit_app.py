@@ -1,8 +1,4 @@
 import streamlit as st
-
-st.set_page_config(page_title="CLIP Crop & Disease Detection", layout="wide")
-
-
 from PIL import Image
 import torch
 import torch.nn.functional as F
@@ -24,6 +20,7 @@ def main():
     if "uploaded_image" not in st.session_state:
         st.session_state.uploaded_image = None
 
+    previous_chat_recieved = False
     # === SIDEBAR: Google Sign-In & Chat History ===
     with st.sidebar:
         st.title("Account")
@@ -46,6 +43,22 @@ def main():
                     st.session_state["google_user"] = user_info
                     st.rerun()
         else:
+            st.markdown(
+                  f"""
+                  <style>
+                  div[data-testid="stButton"] > button {{
+                      width: 100%;
+                      display: block;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      /* padding: 12px 16px; */
+                      text-overflow: ellipsis;
+                  }}
+                  </style>
+                  """,
+                  unsafe_allow_html=True
+             )
+            
             user = st.session_state["google_user"]
             col1, col2 = st.columns([1, 4])
             with col1:
@@ -80,6 +93,7 @@ def main():
                 if st.button(f"{chat_title}", key=chat_id):
                     load_chat(user["sub"], chat_id)
                     st.session_state["current_chat_id"] = chat_id
+                    previous_chat_recieved = True
 
     # ==== MAIN CONTENT ====
     st.title("🌱 CLIP Crop & Disease Detection")
@@ -118,6 +132,7 @@ def main():
 
     # Chat Interaction
     st.subheader("💬 Chat with LLAMA")
+    display_current_chat()
 
     user_prompt = st.chat_input("Ask LLAMA about this diagnosis...")
     if user_prompt:

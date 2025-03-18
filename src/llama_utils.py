@@ -71,6 +71,7 @@ def process_user_input(user_prompt, language, selected_crop=None):
     similarity_threshold = 0.5  # Adjust based on testing
     print(f"Similarity Score: {similarity_score}")
     # Reject queries that are outside the domain
+    '''
     if similarity_score < similarity_threshold:
         assistant_response = "I'm sorry, but your question seems unrelated to the available knowledge on crops."
         st.chat_message("assistant").markdown(assistant_response)
