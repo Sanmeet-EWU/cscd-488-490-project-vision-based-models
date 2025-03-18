@@ -1,4 +1,6 @@
 import streamlit as st
+st.set_page_config(page_title="CLIP Crop & Disease Detection", layout="wide")
+
 from PIL import Image
 import torch
 import torch.nn.functional as F
@@ -10,8 +12,6 @@ from src.classes import get_classes
 from src.llama_utils import generate_clip_description, process_user_input, display_current_chat, generate_chat_title
 from src.oauth import get_login_url, get_google_info
 from src.firebase_config import create_user_if_not_exists, create_new_chat, fetch_chat_history, load_chat, update_chat_history, add_feedback
-
-
 
 def main():
     # Ensure session state is initialized
@@ -113,7 +113,7 @@ def main():
             st.session_state.uploaded_image = uploaded_file
 
             # Load CLIP model (cached)
-            model, preprocess, device = load_custom_clip_model()
+            model, preprocess, device = load_basic_clip_model()
 
             st.image(image, caption="Uploaded Image", width=400)
 
@@ -132,8 +132,9 @@ def main():
 
     # Chat Interaction
     st.subheader("💬 Chat with LLAMA")
-    display_current_chat()
-
+    if previous_chat_recieved:
+        display_current_chat()
+        
     user_prompt = st.chat_input("Ask LLAMA about this diagnosis...")
     if user_prompt:
         messages = process_user_input(user_prompt, language)  # Handle user query
