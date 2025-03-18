@@ -66,8 +66,7 @@ def process_user_input(user_prompt, language, selected_crop=None):
     query_embedding = similarity_model.encode(user_prompt, convert_to_tensor=True)
     context_embedding = similarity_model.encode(context_text, convert_to_tensor=True)
     similarity_score = util.pytorch_cos_sim(query_embedding, context_embedding).item()
-    
-    '''
+
     similarity_threshold = 0.5  # Adjust based on testing
     print(f"Similarity Score: {similarity_score}")
     # Reject queries that are outside the domain
